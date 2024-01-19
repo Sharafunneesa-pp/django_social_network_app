@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Your PROFILE Here</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <form action="" method="post" enctype="multipart/form-data">
+                {%csrf_token%}
+                {{form.as_p}}
+                <button type="submit">Edit</button>
+            </form>
+                
+
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+</html>
